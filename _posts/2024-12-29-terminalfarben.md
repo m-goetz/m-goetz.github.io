@@ -5,8 +5,6 @@ date:   2024-12-29
 categories: snippets
 ---
 
-# Terminal in Farbe und Bunt
-
 Ich hatte letztens den Anwendungsfall, dass ich in einem Docker-Container mehrere Prozesse parallel am Laufen hatte - jedoch hat ein Container naturgemäß nur ein Log. Statt mich für einen Prozess zu entscheiden, dessen Output ich anzeigen will, habe ich mich dazu entschieden, die Outputs aller Prozesse anzeigen zu lassen - eben gemischt, alles in einem Log. Natürlich ist das anfangs nicht besonders übersichtlich.
 
 Mein Entrypoint-Skript sieht in etwa so aus (obfuskiert):
@@ -53,4 +51,6 @@ tail -f /var/log/someapp/*.log | sed "s/^/\x1b[33m[someapp ]\x1b[0m /" &
 tail -f /dev/null
 ```
 
-Und dann hatte alles seine Richtigkeit und Farbe 👉🌈. 
+Und dann hatte alles seine Richtigkeit und Farbe 👉🌈:
+
+![m-goetz](/assets/images/color_terminal.png)
