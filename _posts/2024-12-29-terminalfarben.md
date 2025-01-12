@@ -53,4 +53,4 @@ tail -f /dev/null
 
 Und dann hatte alles seine Richtigkeit und Farbe 👉🌈:
 
-![m-goetz](/assets/images/color_terminal.png)
+![color-terminal](/assets/images/color_terminal.png)
