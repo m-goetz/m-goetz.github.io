@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Routen für VPN festlegen in Ubuntu
+title:  Split-Tunneling in Ubuntu
 date:   2025-01-26
 categories: snippets
 ---
 
-Das bei mir in Ubuntu hinterlegte VPN zu meiner Arbeit hatte die doofe Eigenschaft, dass der komplette Internetverkehr darüber gelaufen ist. Jeder Aufruf zu `google.de` oder `teams.microsoft.com` ging über das Arbeits-VPN, mit entsprechenden Drawbacks: langsame Verbindungen, Abbrüche, und unser IT-Capo war bestimmt nur bedingt glücklich damit, dass ich die Internetleitung der Firma unnötigerweise belastet habe. Aber das hat jetzt ein Ende - gemacht hab ich es so:
+Das bei mir in Ubuntu hinterlegte VPN zu meiner Arbeit hatte die doofe Eigenschaft, dass der komplette Internetverkehr darüber gelaufen ist. Jeder Aufruf zu `google.de` oder `teams.microsoft.com` ging über das Arbeits-VPN, mit entsprechenden Drawbacks: langsame Verbindungen, Abbrüche, und unser IT-Capo war bestimmt nur bedingt glücklich damit, dass ich die Internetleitung der Firma unnötigerweise belastet habe. Aber das hat jetzt ein Ende - eingerichtet habe ich das sogenannte "Split-Tunneling" so:
 
 Zunächst muss man in der VPN-Verbindung in Ubuntu festlegen, dass die Verbindung nur für Ressourcen innerhalb des Netzwerks verwendet werden soll. Dazu muss man den entsprechenden Haken setzen:
 
