@@ -36,6 +36,8 @@ FallbackDNS=8.8.8.8
 
 ``` 
 
+Danach einfach den Dienst neu starten mit `sudo systemctl restart systemd-resolved`.
+
 Die aktuell verwendeten DNS-Server kann man mit diesem Befehl herausfinden - damit habe ich meine Einstellungen kontrolliert:
 
 ```bash
